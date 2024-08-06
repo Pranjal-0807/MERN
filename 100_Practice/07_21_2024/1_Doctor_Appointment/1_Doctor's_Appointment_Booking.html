@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto 450px;
+        }
+      form {
+        border: 2px solid rgb(227, 225, 225);
+        padding: 20px;
+      }
+      fieldset{
+        background-color: rgb(231, 228, 228);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend
+          style="
+            border: 1px solid;
+            background-color: rgb(148, 146, 146);
+            color: white;
+            padding: 4px;
+          "
+        >
+          Book an Appointment
+        </legend>
+
+        <h2 style="text-align: center">Doctor Appointment Booking</h2>
+
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required size="74" style="margin: 4px 4px 4px 15px ; height: 30px;"/>
+        <p></p>
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required size="74" style="margin: 4px 4px 4px 15px ; height: 30px;"/><br /><br />
+
+        <label for="email">Date:</label><br />
+        <input type="date" id="date" name="date" required style="width: 525px; margin: 4px 4px 4px 15px; height: 30px; text-align: center"/><br /><br />
+
+        <label for="time">Time:</label><br />
+        <input type="time" id="time" name="time" required style="width: 525px; margin: 4px 4px 4px 15px; height: 30px; text-align: center;"/><br /><br />
+
+        <label for="doctor">Select Doctor:</label><br />
+        <select name="doctor" id="doctor" required style="margin: 4px 4px 4px 15px ; width: 525px; height: 30px; text-align: center;">
+          <option value="">--Please Choose an Option--</option>
+          <option value="DS">Dr. Smith</option>
+          <option value="DJ">Dr. John</option>
+          <option value="DW">Dr. Williams</option></select
+        ><br /><br />
+
+        <label for="text">Reason For Visit:</label><br />
+        <textarea id="text" name="text" rows="6" required style="margin: 4px 4px 4px 15px ; width: 525px;"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Book Appointment" style="width: 525px; margin: 4px 4px 4px 15px; height: 30px;"/><br />
+        <input type="reset" value="Reset" style="margin: 4px 4px 4px 15px ; width: 525px; height: 30px;"/>
+      </fieldset>
+    </form>
+  </body>
+</html>

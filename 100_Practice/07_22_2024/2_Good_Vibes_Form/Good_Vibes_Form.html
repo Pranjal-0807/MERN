@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #a9d7e9;
+        }
+        form{
+            margin: auto 20%;
+            border: 2px solid black;
+            text-align: center;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+        }
+        .input-class{
+            width: 250px;
+            height: 25px;
+            border: 1px solid rgb(164, 164, 164);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 45px;">Good Vibes Form</h1>
+    <form>
+        <h3>Tell us something positive that happened to you today.</h3>
+        <label for="name">Name</label>
+        <input class="input-class" type="text" id="name" name="name" required placeholder="Enter your name"><p></p>
+        
+        <label for="email">Email</label>
+        <input class="input-class" type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+
+        <label for="rating">On a scale of 1-10,how good was it?</label>
+        <input class="input-class" type="number" id="rating" name="rating" required placeholder="Enter a number between 1 and 10" ><br><br>
+
+        <label for="doctor">Where did it happen?</label>
+        <select style="border-radius: 5px; height: 25px; background-color: #ece9e9;" name="doctor" id="doctor" required>
+            <option value="">At home</option>
+            <option value="">On my commute</option>
+            <option value="">At work</option>
+            <option value="">On the street</option>
+            <option value="">Other</option>
+        </select><br><br>
+
+        <label for="choose-one">At what time of day did ot happen?</label>
+        <input type="radio" name="unique">Morning <br>
+        <input type="radio" name="unique">Afternoon <br>
+        <input type="radio" name="unique">Evening<br><br>
+
+        <label for="">What emotions did you experience?</label>
+        <input type="checkbox">Excited <br>
+        <label for="">(Select all that apply)</label>
+        <input type="checkbox">Humbled <br>
+        <input type="checkbox">Elated <br>
+        <input type="checkbox">Loved <br>
+        <input type="checkbox">Enthusiastic<br><br>
+
+        <label for="text">Please describe your positive experience.</label>
+        <textarea  id="text" name="text" rows="3" required placeholder="Enter your experience here..." style="width: 300px;"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

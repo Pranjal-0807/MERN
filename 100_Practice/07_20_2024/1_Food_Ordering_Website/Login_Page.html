@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("/Practice/07_20_2024/1_Food_Ordering_Website/Nature.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .center {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <form>
+        <h1>Sign In</h1>
+        <label for="userName">Username:</label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          placeholder="Enter your Username"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your Password"
+          required
+        />
+
+        <br />
+        <br />
+
+        <input onclick="document.location='Order_Page.html'" style="background-color: rgb(247, 247, 49)" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>

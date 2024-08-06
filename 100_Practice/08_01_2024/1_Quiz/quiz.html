@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <!-- <h1 style="text-align: center;">Number of questions asked in the quiz will depend on your luck.</h1> -->
+    <form class="container"></form>
+
+    <script src="quiz.js"></script>
+    <!-- <script>
+      // Getting the address of div element defined in html file
+      let formAddr = document.querySelector(".container");
+
+      // Creating a new heading tag
+      let heading = document.createElement("h1");
+      formAddr.appendChild(heading);
+      heading.textContent = "Basic Math Quiz";
+      heading.classList = "main-heading";
+
+      for (let i = 1; i <= Math.random() * 10; i++) {
+        // Choosing a random operator
+        let arrOperator = ["+", "-", "*", "/", "%", "^"];
+        let randomOperator =
+          arrOperator[Math.floor(Math.random() * arrOperator.length)];
+
+        // Choosing two random number
+        let num1 = Math.round(Math.random() * 100);
+        let num2 = Math.round(Math.random() * 100);
+
+        // Creating new paragraph tag
+        let paragraph = document.createElement("p");
+        formAddr.appendChild(paragraph);
+        paragraph.textContent = `${i}. What is ${num1} ${randomOperator} ${num2}?`;
+        paragraph.classList = "para";
+
+        // Adding options to choose the correct one
+        for (let j = 0; j < 4; j++) {
+          // Creating radios to see which answer is ticked
+          let radio = document.createElement("input");
+          radio.type = "radio";
+          radio.classList = "radio-class";
+          formAddr.appendChild(radio);
+
+          // Creating spans to show the options
+          let span = document.createElement("span");
+          formAddr.appendChild(span);
+          let ans = answer(randomOperator, num1, num2);
+          if (j == 3) {
+            span.textContent = `${Math.round(ans * 100) / 100}`;
+          } else {
+            span.textContent = `${
+              Math.round(Math.random() * ans * 10 * 100) / 100
+            }`;
+          }
+          span.classList = "span-class";
+
+          // Creating a line break to separate each radio button
+          formAddr.appendChild(document.createElement("br"));
+        }
+      }
+      // Creating Submit Button
+      let submitBtn = document.createElement("button");
+      formAddr.appendChild(submitBtn);
+      submitBtn.textContent = "Submit Quiz";
+      submitBtn.classList = "submit-btn";
+
+      // Logic for finding the answer of the questions
+      function answer(randomOperator, num1, num2) {
+        switch (randomOperator) {
+          case "+":
+            return num1 + num2;
+            break;
+          case "-":
+            return num1 - num2;
+            break;
+          case "*":
+            return num1 * num2;
+            break;
+          case "/":
+            return num1 / num2;
+            break;
+          case "%":
+            return num1 % num2;
+            break;
+          case "^":
+            return num1 ** num2;
+            break;
+          default:
+            return "Invalid operator";
+        }
+      }
+    </script> -->
+  </body>
+</html>

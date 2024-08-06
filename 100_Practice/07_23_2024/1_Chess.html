@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #chess{
+        height: 490px;
+        width: 491px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: start;
+        margin: auto;
+        margin-top: 120px;
+      }
+      .white{
+        background-color: rgb(232, 229, 229);
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+      .black{
+        background-color: rgb(104, 102, 102);
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+
+</style>
+<body>
+    <div id="chess"></div>
+    
+    <script>
+        const chess_board = document.getElementById('chess');
+        for(let rows = 0; rows < 8; rows++){
+            for(let cols = 0; cols < 8; cols++){
+                let c_d = document.createElement('div');
+                c_d.innerText=(rows*8 + cols);
+                if((rows+cols)%2==0){
+                    c_d.className='black';
+                }    
+                else{
+                    c_d.className='white';
+                } 
+                chess_board.append(c_d);
+            }
+        }
+    </script>
+</body>
+</html>
