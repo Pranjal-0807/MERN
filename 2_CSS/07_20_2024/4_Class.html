@@ -1,0 +1,51 @@
+<!-- Precedence order => id > class > element -->
+<!-- We can specify multiple class in one element but only one id   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .span-class{
+            color: red;
+            background-color: yellow;
+            font-size: 32px;
+        }
+        div{
+            background-color: greenyellow;
+        }
+        .div{
+            background-color: yellow;
+        }
+        #one{
+            background-color: red;
+        }
+        .div-class{
+            background-color: blueviolet;
+        }
+        #div-id{
+            background-color: brown;
+        }
+        .div-class-2{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <span class="span-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus perferendis vero accusantium, et, laborum maxime expedita ipsa atque omnis dignissimos magni minima cupiditate ducimus iusto fugiat rem eos ipsam!</span>
+
+    <div>
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="div">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, quam.</div>
+
+    <div id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, perferendis.</div>
+
+    <div id="div-id" class="div-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ullam!</div>
+
+    <div class="div-class-2 div-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ullam!</div>
+    <!-- Apply CSS of the class which is defined later in css -->
+</body>
+</html>

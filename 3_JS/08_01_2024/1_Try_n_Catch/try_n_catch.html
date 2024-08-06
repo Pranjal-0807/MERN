@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <form id="weather-form">
+      <label for="city">Enter city name:</label>
+      <input type="text" id="city" name="city" required />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="weather-info" id="weather-info"></div>
+
+    <script>
+
+    function division(a,b){
+        if(b === 0){
+            throw new Error(`Divisor can't be zero`);
+        }
+        return a/b;
+    }  
+    // console.log(division(10,0));      
+
+
+    // We are using try and catch for handling error. Comment the following code and uncomment the above code line to see the difference but print one statement after try and catch block in both scenario.
+    try{
+      console.log(division(10,0));
+    }
+    catch(err){
+      console.log('Divide by 0 error!')
+    }
+
+
+    console.log('Hello');
+
+
+
+    //   let num1 = 10;
+    // //   let num2 = 20;
+    //   try{
+    //       console.log(num2);
+    //   }
+    //   catch{
+    //     console.log("Error");
+    //   }
+    </script>
+  </body>
+</html>

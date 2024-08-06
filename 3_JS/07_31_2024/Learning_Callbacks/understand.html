@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .weather-info {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <form id="weather-form">
+      <label for="city">Enter city name:</label>
+      <input type="text" id="city" name="city" required />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="weather-info" id="weather-info"></div>
+
+    <script>
+      const url =
+        "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=41199dfd87640980a3ab51c308fa6cdd";
+      console.log(url);
+
+      function successPromise(responseObject) {
+        // console.log('responseObject',responseObject)
+        console.log("successPromise");
+      }
+
+      function failedPromise(){
+        console.log('failedPromise');
+      }
+      async function getWeather() {
+        const responseVar = await fetch(url);
+        // wait for promise to complete and then extract the result
+
+        console.log(responseVar)
+        // console.log(typeof responseVar)
+
+
+        const jsonData = await responseVar.json();
+        console.log(jsonData);
+        // Above prints the actual data we want, same as 
+
+       
+
+        // OR
+
+        // const apiResponsePromise = fetch(url);
+        // console.log('apiResponsePromise' , apiResponsePromise);
+        // console.log('123');
+
+        // apiResponsePromise
+        // .then(successPromise)
+        // .catch(failedPromise);
+
+
+        // pass a function, this is executed once response is success
+        // console.log("apiResponse", apiResponse);
+      }
+      getWeather();
+    </script>
+  </body>
+</html>

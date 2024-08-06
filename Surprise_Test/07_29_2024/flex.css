@@ -1,0 +1,104 @@
+#container{
+    border: 2px solid green;
+    height: 350px;
+    width: 500px;
+    background-color: rgb(196, 242, 196);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-div{
+    border: 2px solid darkblue;
+    height: 70px;
+    width: 90%;
+    background-color: rgb(92, 182, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.div1,.div2,.div3{
+    height: 65%;
+    width: 28%;
+    border: 2px solid rgb(247, 113, 136);
+    background-color: lightgoldenrodyellow;
+}
+
+.div2-1,.div2-2{
+    border: 2px solid red;
+    height: 80%;
+    width: 43%;
+    background-color: rgb(244, 183, 193);
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.second-div{
+    height: 140px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.big-div{
+    border: 2px solid rgb(201, 8, 8);
+    height: 100%;
+    width: 47.5%;
+    background-color: rgb(246, 168, 181);
+}
+
+.small-div-1,.small-div-2{
+    border: 2px solid rgb(201, 8, 8);
+    height: 44.8%;
+    width: 47.3%;
+    background-color: rgb(246, 168, 181);
+}
+
+
+
+
+
+
+
+
+
+
+.third-div{
+    border: 2px solid darkblue;
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-color: rgb(159, 159, 251);
+}
+
+#div1,#div4{
+    border: 2px solid darkblue;
+    height: 80%;
+    width: 26%;
+    background-color: rgb(205, 170, 238);
+}
+
+#div2,#div3{
+    border: 2px solid rgb(215, 116, 215);
+    height: 80%;
+    width: 20%;
+    background-color: lightgoldenrodyellow;
+}

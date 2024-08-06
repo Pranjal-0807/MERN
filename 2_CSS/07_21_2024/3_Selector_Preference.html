@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* body > div > div > div {
+      background-color: red;
+    } */
+    /* body>div>div{
+        background-color: red;
+    }
+    body>div{
+        background-color: red;
+    } */
+    /* body div {
+      background-color: yellow;
+    } */
+    p + p {
+      background-color: purple;
+    }
+     /* where there are tow immediate p tag then apply css on 2nd p tag */
+    p+p+p{
+        background-color: aqua;
+    }
+   
+    div+div{
+        color: aquamarine;
+    }
+    p:first-of-type{
+        text-align: center;
+    }
+    /* give property to first child */
+    
+  </style>
+  <body>
+    <div>
+      Lorem.
+      <div>
+        Lorem.
+        <div>Lorem.</div>
+      </div>
+    </div>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <section>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+  </body>
+</html>

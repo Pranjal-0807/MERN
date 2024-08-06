@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .weather-info {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <form id="weather-form">
+      <label for="city">Enter city name:</label>
+      <input type="text" id="city" name="city" required />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="weather-info" id="weather-info"></div>
+
+    <script>
+      const url =
+        "https://api.openweathermap.org/data/2.5/weather?q=Moradabad&appid=41199dfd87640980a3ab51c308fa6cdd";
+      console.log(url);
+
+      async function getWeather() {
+        const jsonData = await (await fetch(url)).json();
+        console.log(jsonData);
+
+        const temp = jsonData.main.temp;
+        console.log(temp);
+
+        const tempDis = document.querySelector(".weather-info");
+        tempDis.innerHTML = temp;
+      }
+      getWeather();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1_Flexbox.css">
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+            /* align-content: space-evenly; */
+            /* Without flex wrap we can't use align-content */
+            /* gap: 1em; */
+        }
+
+        .item-1{
+            flex-grow: 2;
+            order: 2;
+        }
+        .item-2{
+            flex-grow: 4;
+            align-self: center;
+            order: -1;;
+        }
+        .item-3{
+            flex-grow: 2;
+            order: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <i class="fa-solid fa-chess-king"></i>
+    <div class="container">
+      <div class="item item-1">Item 1</div>
+      <div class="item item-2">Item 2</div>
+      <div class="item item-3">Item 3</div>
+      <!-- <div class="item item-4">Item 4</div>
+      <div class="item item-5">Item 5</div>
+      <div class="item item-6">Item 6</div>
+      <div class="item item-7">Item 7</div>
+      <div class="item item-8">Item 8</div>
+      <div class="item item-9">Item 9</div>
+      <div class="item item-10">Item 10</div> -->
+      <!-- <div class="item item-11">Item 11</div> -->
+    </div>
+  </body>
+</html>
